@@ -1,14 +1,17 @@
 package rmi;
 
+import java.math.*;
 import java.rmi.registry.*;
 import java.util.*;
 
 public class ProvinceClient {
 
   public static void main(String[] args) {
+    BigDecimal decimal;
+    decimal.longValue();
     try {
       //Get reference to rmi registry server
-      Registry registry = LocateRegistry.getRegistry("127.0.0.1");
+      Registry registry = LocateRegistry.getRegistry("192.168.0.7");
       //Lookup server object
       IRemoteProvince rp = (IRemoteProvince) registry.lookup("Province");
       //Save province
