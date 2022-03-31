@@ -16,7 +16,6 @@ public class LoginServlet extends HttpServlet {
   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     String userName = request.getParameter("username");//Se toman los valores
     String password = request.getParameter("password");//de la página JSP
-
     //Se crea un bean LoginBean, una clase normal de java, contiene sólo setters y getters, para acceder a la información del usuario cuando se requiere.
     LoginBean loginBean = new LoginBean();
 
