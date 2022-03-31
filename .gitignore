@@ -5,3 +5,5 @@
 /IFPWAFCAD/target/
 /IFPWAFCAD/nbproject/
 /WebMVCMySQL/target/
+**/.idea/
+**/target/
