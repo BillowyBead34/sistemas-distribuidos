@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.net.InetAddress;
 import java.net.SocketException;
 import java.net.UnknownHostException;
-import java.text.NumberFormat;
+import java.text.*;
 
 import org.apache.commons.net.ntp.NTPUDPClient;
 import org.apache.commons.net.ntp.NtpUtils;
@@ -12,9 +12,8 @@ import org.apache.commons.net.ntp.NtpV3Packet;
 import org.apache.commons.net.ntp.TimeInfo;
 import org.apache.commons.net.ntp.TimeStamp;
 
-
 public class NTPClient {
-  private static final NumberFormat numberFormat = new java.text.DecimalFormat("0.00");
+  private static final NumberFormat numberFormat = new DecimalFormat("0.00");
 
   public static void processResponse(TimeInfo info) {
     NtpV3Packet message = info.getMessage();
